@@ -30,3 +30,4 @@ This is a simple web calculator application built using HTML, CSS, and JavaScrip
 1. Clone the repository:
 
    ```bash
+https://github.com/ReignDeve/Calculator.git
