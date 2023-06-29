@@ -13,12 +13,17 @@ document.getElementById('calculatorForm').addEventListener('submit', function(ev
   calculate();
 });
 
+function clearf() {
+  console.log('clear');
+  expressionInput.value = '';
+}
+
 function calculate() {
   var expression = expressionInput.value;
 
   // Überprüfen, ob der Ausdruck gültig ist
   if (!isValidExpression(expression)) {
-    document.getElementById('result').textContent = 'Ungültiger Ausdruck';
+    expressionInput.value = 'Ungültiger Ausdruck';
     return;
   }
 
@@ -37,7 +42,7 @@ function calculate() {
     return response.text();
   })
   .then(function(result) {
-    expressionInput.value = expression + ' = ' + result;
+    expressionInput.value = result;
   });
 }
 
