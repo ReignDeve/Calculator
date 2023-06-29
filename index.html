@@ -9,32 +9,34 @@
 <body>
     
     <div id="calculator">
-        <form id="calculatorForm">
-          <input type="text" id="expression" placeholder="Ausdruck eingeben">
-          <div id="numpad">
-                <div class="button" onclick="appendSymbol('7')">7</div>
-                <div class="button" onclick="appendSymbol('8')">8</div>
-                <div class="button" onclick="appendSymbol('9')">9</div>
-                <div class="operator" onclick="appendSymbol('+')">+</div>
-                <div class="button" onclick="appendSymbol('4')">4</div>
-                <div class="button" onclick="appendSymbol('5')">5</div>
-                <div class="button" onclick="appendSymbol('6')">6</div>
-                <div class="operator" onclick="appendSymbol('-')">-</div>
-                <div class="button" onclick="appendSymbol('1')">1</div>
-                <div class="button" onclick="appendSymbol('2')">2</div>
-                <div class="button" onclick="appendSymbol('3')">3</div>
-                <div class="operator" onclick="appendSymbol('*')">*</div>
-                <div class="button" onclick="appendSymbol('0')">0</div>
-                <div class="button" onclick="appendSymbol('.')">.</div>
-                <div class="button" onclick="deleteLastSymbol()">&larr;</div>                      
-                <div class="operator" onclick="appendSymbol('/')">/</div>
-                <div class="button" onclick="calculate()">=</div>
-                <div id="clear" class="button">C</div>
-            </div>          
-        </form>
-        <div id="result"></div>
-      </div>
+    <form id="calculatorForm">
+      <input type="text" id="expression" placeholder="Ausdruck eingeben">
+      <div id="numpad">
+            <div class="button" onclick="appendSymbol('7')">7</div>
+            <div class="button" onclick="appendSymbol('8')">8</div>
+            <div class="button" onclick="appendSymbol('9')">9</div>
+            <div class="operator" onclick="appendSymbol('+')">+</div>
+            <div class="button" onclick="appendSymbol('4')">4</div>
+            <div class="button" onclick="appendSymbol('5')">5</div>
+            <div class="button" onclick="appendSymbol('6')">6</div>
+            <div class="operator" onclick="appendSymbol('-')">-</div>
+            <div class="button" onclick="appendSymbol('1')">1</div>
+            <div class="button" onclick="appendSymbol('2')">2</div>
+            <div class="button" onclick="appendSymbol('3')">3</div>
+            <div class="operator" onclick="appendSymbol('*')">*</div>
+            <div class="button" onclick="appendSymbol('0')">0</div>
+            <div class="button" onclick="appendSymbol('.')">.</div>
+            <div class="button" onclick="deleteLastSymbol()">&larr;</div>                      
+            <div class="operator" onclick="appendSymbol('/')">/</div>
+            <div class="button" onclick="calculate()">=</div>
+            <div></div>
+            <div></div>
+            <div class="button" onclick="clearf()">C</div>
+        </div>          
+    </form>
+    <div id="result"></div>
+  </div>
 
-      <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
