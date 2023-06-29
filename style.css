@@ -9,9 +9,12 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 10px;
   padding: 20px;
+  background: black;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, -2px 0px 6px 10px rgba(0,0,0,0.13); 
+  box-shadow: 0px 10px 13px -7px #000000, -2px 0px 6px 10px rgba(0,0,0,0.13);
 }
 
 #expression {
@@ -20,7 +23,10 @@ body {
   font-size: 40px;
   text-align: center;
   margin-bottom: 50px;
+  padding: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, -2px 0px 6px 10px rgba(0,0,0,0.13); 
+  box-shadow: 0px 10px 13px -7px #000000, -2px 0px 6px 10px rgba(0,0,0,0.13);
 }
 
 #numpad {
@@ -28,6 +34,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   margin-bottom: 10px;
+  color: white;
 }
 
 
@@ -41,7 +48,10 @@ body {
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
+  background: orange;
   border: 2px solid black;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, -2px 0px 6px 10px rgba(0,0,0,0.13); 
+  box-shadow: 0px 10px 13px -7px #000000, -2px 0px 6px 10px rgba(0,0,0,0.13);
 }
 
 #operators {
