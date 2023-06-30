@@ -7,7 +7,7 @@ This is a simple web calculator application built using HTML, CSS, and JavaScrip
 - User-friendly interface with a responsive design.
 - Input field to display the expression being entered.
 - Numpad for numeric input.
-- Operator buttons for performing arithmetic operations.
+- Operator buttons for performing simple arithmetic operations.
 - "Equals" button to calculate and display the result.
 - "Clear" button to reset the input field.
 
