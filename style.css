@@ -61,3 +61,29 @@ body {
   align-items: flex-start;
   margin-left: 20px;
 }
+
+@media screen and (max-width: 480px) {
+  #calculator {
+    flex-direction: column;
+    width: 100px;
+    height: 200px;
+  }
+  #expression {
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  #numpad {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .button,
+  .operator {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }
+  #operators {
+    margin-left: 10px;
+  }
+}
